@@ -1,28 +1,122 @@
-/*
-RESET
- */
+@import "reset.css";
+@import "general.css";
+@import "colors.css";
 
- *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
+/* 
 
- /* 
- GENERAL
- */
+HEADER
 
- body{
-    font-family: Arial, Helvetica, sans-serif;
- }
- 
- .container{
-    max-width: 1200px;
-    margin: 0 auto;
- }
+*/
 
- /* DEBUG */
-.debug{
+.header-main-content{
 
+   display: flex;
+   justify-content: space-between;
+   padding: 10px 0;
+
+}
+
+.header-main-content .nav-container{
+
+   display: none;
+}
+
+.header-main-content .nav-container ul{
+   display: flex;
+   list-style: none;
+
+}
+
+.header-main-content .nav-container ul a{
+   display: inline-block;
+   text-decoration: none;
+   color: white;
+   padding: 10px;
+
+}
+
+/* 
+
+MAIN
+
+*/
+main section{
+
+   padding: 2.5rem 0;
+
+}
+
+.cards{
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 -.625rem; 
+   
+}
+
+.card{
+   width: calc(100% - 1.25rem);
+   margin: 0 .625rem 1.25rem;
+
+}
+
+.card > div {
+   padding: .625rem;
+
+}
+
+/* 
+---------------------------------------
+RESPONSIVE
+---------------------------------------
+*/
+
+/* TABLET-> da 768px in poi */
+/* 
+HEADER
+*/
+
+/* 
+MAIN
+*/
+
+@media screen and (min-width: 768px){
+
+   .card{
+      width: calc((100% / 3) - 1.25rem);
+   
+   }
+   .card:first-child{
+      width: calc(((100% / 3) * 2) - 1.25rem);
+   }
+
+
+}
+
+/* DESKTOP-> da 992px in poi */
+
+@media screen and (min-width:992px){
+   .header-main-content .hamburger-container{
+
+      display: none;
+   }
+
+   .header-main-content .nav-container{
+
+      display: block;
+   }
+/* 
+
+MAIN
+
+*/
+.card .main-card-content{
+
+   display: flex;
+
+}
+
+}
+.card .main-card-content > div{
+   width: 50%;
 
 }

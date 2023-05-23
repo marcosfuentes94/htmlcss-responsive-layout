@@ -1,0 +1,39 @@
+/* 
+
+COLORS
+
+*/
+
+:root{
+  --main-color:#0084FD;
+  --main-color-light:#B5DDFF;
+  --secondary-color:#9792E4;
+
+}
+
+.main-color-text{
+
+    color: var(--main-color);
+}
+
+.main-color-bg{
+
+    background-color: var(--main-color);
+}
+.main-color-light-text{
+
+    background-color: var(--main-color-light);
+}
+.main-color-light-bg{
+
+    background-color: var(--main-color-light);
+}
+
+.secondary-color-text{
+    color: var(--secondary-color);
+
+}
+.secondary-color-bg{
+    color: var(--secondary-color);
+
+}
