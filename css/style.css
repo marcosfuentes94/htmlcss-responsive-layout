@@ -63,6 +63,12 @@ main section{
    padding: .625rem;
 
 }
+.planning-container > div:first-child{
+  margin-bottom: 20px;
+}
+.testimonials-header{
+   text-align: center;
+}
 
 /* 
 ---------------------------------------
@@ -114,9 +120,21 @@ MAIN
    display: flex;
 
 }
-
-}
 .card .main-card-content > div{
    width: 50%;
 
+}
+.planning-container{
+   display: flex;
+   align-items: flex-end;
+   padding: 0 50px;
+}
+.planning-container > div{
+   width: 50%;
+   padding: 20px;
+   margin-bottom: 0;
+}
+.planning-container > div:first-child{
+   margin-bottom: 0;
+}
 }
